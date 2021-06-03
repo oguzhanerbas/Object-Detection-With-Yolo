@@ -28,6 +28,10 @@ names = leaf_data\leaf.names
 backup = backup
 -save as “object_name.data”
 
+- Create another txt file and write 
+smooth_leaf
+save as “object_name.names”
 
-
+- All this file send to a file named object_data like this
+https://www.hizliresim.com/nvbpik9
 
