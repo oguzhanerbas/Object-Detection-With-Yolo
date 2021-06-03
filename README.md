@@ -35,3 +35,26 @@ save as “object_name.names”
 - All this file send to a file named object_data like this <br>
 ![alt text](https://github.com/oguzhanerbas/Object-Detection-With-Yolo/blob/main/image1.png) <br>
 ![alt text](https://github.com/oguzhanerbas/Object-Detection-With-Yolo/blob/main/image2.png)
+
+- Send object_data to darknet and transform darknet file to zip
+
+### Google Drive 
+- Upload the darknet.zip to Google Drive
+- Open new file in Drive named custom_object_model and send zip file to custom_object_model, and create another open new file in named object_weights, again open new file in object_weights named backup.
+
+### Google Colab
+Open a new Colab file in drive <br>
+Write These Code:<br>
+System Properties ==>  %cat /etc/lsb/-release<br>
+Storage Update ==> !apt-get update<br>
+Learning adress ==>%pwd (output must be ‘/content’)<br>
+Unzip ==> !unzip “/content/drive/My Drive/custom_object_model/darknet.zip”<br>
+Setting Adress ==> %cd /content/darknet<br>
+For Checking ==> %pwd (output must be the ‘content/darknet’)<br>
+Download dus2unix ==> !sodu apt install dos2unix<br>
+Transform the files to Unix ==> !find . -type f -print0 | xargs -0 dos2unix<br>
+Permission ==> !chmod +x /content/darknet<br>
+Delete File ==> !rm /content/darknet/backup -r<br>
+Linking with Drive and Backup ==> !ln -s /content/drive/”My Drive”/object_weights/backup /content/darknet<br>
+Starting Train ==> !./darknet detector train object_data/object.data object_yolov4.cfg yolov4.conv.137 -map -dont_show<br>
+
