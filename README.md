@@ -32,6 +32,6 @@ backup = backup
 smooth_leaf
 save as “object_name.names”
 
-- All this file send to a file named object_data like this
-< br > ![alt text](https://github.com/oguzhanerbas/Object-Detection-With-Yolo/blob/main/image1.png)
-< br > ![alt text](https://github.com/oguzhanerbas/Object-Detection-With-Yolo/blob/main/image2.png)
+- All this file send to a file named object_data like this <br>
+![alt text](https://github.com/oguzhanerbas/Object-Detection-With-Yolo/blob/main/image1.png) <br>
+![alt text](https://github.com/oguzhanerbas/Object-Detection-With-Yolo/blob/main/image2.png)
