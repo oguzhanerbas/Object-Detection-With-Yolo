@@ -168,3 +168,5 @@ Write These Code:<br>
     cv2.imshow("Detection Window", img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+![alt text](https://github.com/oguzhanerbas/Object-Detection-With-Yolo/blob/main/leaf_detected_image.png)
+ 
